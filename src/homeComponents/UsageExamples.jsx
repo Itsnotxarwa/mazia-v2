@@ -1,0 +1,58 @@
+import { Player } from '@lottiefiles/react-lottie-player';
+import { Fade } from "react-awesome-reveal";
+import { usageData } from '../data/UsageData';
+
+export default function UsageExamples() {
+
+    return(
+        <section className="relative py-24">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <div className="space-y-4 mb-20">
+                        <div className='flex justify-center'>
+                        <Fade triggerOnce direction="up" duration={800} delay={200}>
+                            <h2 className="text-lg tracking-tighter mb-4 py-1 px-4 border border-blue-950 rounded-full text-blue-950">Cas d’usage</h2>
+                        </Fade>
+                        </div>
+                        <div className='flex justify-center'>
+                        <Fade triggerOnce direction="up" duration={800} delay={200}>
+                            <h2 className="mb-8 font-bold text-3xl md:text-5xl 
+                            leading-tight tracking-tight max-w-2xl">Comment Mazia peut transformer vos appels
+                            </h2>
+                        </Fade>
+                        </div>
+                        <div className='flex justify-center'>
+                        <Fade triggerOnce direction="up" duration={800} delay={200}>
+                        <p className='text-lg max-w-xl text-center mb-6 text-blue-950'>
+                            Mazia automatise et optimise vos appels, gère les demandes clients, qualifie les prospects et fournit des rapports clairs pour améliorer l’efficacité de votre entreprise.                        </p>
+                        </Fade>
+                        </div>
+                        </div>
+                            <div className="grid mx-4 md-mx-6 grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-8">
+                                {usageData.map((item, i) => (
+                                    <Fade key={i} triggerOnce direction="up" duration={800} delay={400}>
+                                        <div className="group flex flex-col space-y-2">
+                                            <div className="flex w-full space-x-4">
+                                                <Player
+                                                autoplay
+                                                loop
+                                                src={item.animation} 
+                                                style={{ height: `${item.size}px`, width: `${item.size}px` }}
+                                                />
+                                            <h3 className="text-xl font-semibold 
+                                            group-hover:text-[#032ca6]
+                                            transition-colors duration-300 tracking-tight">
+                                                {item.title}
+                                            </h3>
+                                        </div>
+                                        <p className="text-left tracking-tight leading-relaxed">{item.description}</p>
+                                    </div>
+                                </Fade>
+                            ))}
+                            </div>
+                        
+                    </div>
+                </div>
+            </section>
+    )
+}
