@@ -1,11 +1,12 @@
+import { Mail, Phone } from "lucide-react";
 import mazLogo from "./assets/image.png";
 
 export default function Footer() {
     return(
         <footer className="pt-24 pb-12 sm:pt-32 sm:pb-16">
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-around">
-                    <div className='flex flex-col justify-between'>
+                <div className="flex flex-col md:flex-row space-y-6 gap-24">
+                    <div className='flex flex-col justify-between space-y-6'>
                         <div className='space-y-6'>
                         <img src={mazLogo} alt="Logo" className="w-44" />
                         <p className='text-lg leading-relaxed'>
@@ -31,6 +32,8 @@ export default function Footer() {
                             </a>
                         </div>             
                     </div>
+
+                    <div className="flex flex-1 justify-center gap-16 w-full">
 
                     <div className="space-y-4">
                         <h3 className="font-semibold text-sm text-black/70 tracking-tight underline">Menu</h3>
@@ -78,6 +81,54 @@ export default function Footer() {
                                 </a>
                             </li>
                         </ul>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h3 className="font-semibold text-sm text-black/70 tracking-tight underline">Legal</h3>
+                        <ul className="space-y-3">
+                            <li>
+                                <a 
+                                href=""
+                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                    Mentions légales
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                href=""
+                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                    Publiques de confidentialité
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h3 className="font-semibold text-sm text-black/70 tracking-tight underline">Contact</h3>
+                        <ul className="space-y-3">
+                            <li className="flex gap-3 items-center">
+                                <div className="flex justify-center p-2 border border-gray-500 bg-gray-50 rounded-lg text-black">
+                                <Mail size={18} />
+                                </div>
+                                <a 
+                                href=""
+                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                    mail@mazia.fr
+                                </a>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <div className="flex justify-center p-2 border border-gray-500 bg-gray-50 rounded-lg text-black">
+                                <Phone size={18} />
+                                </div>
+                                <a 
+                                href=""
+                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                    +33 *******
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                     </div>
                 </div>
             </div>
