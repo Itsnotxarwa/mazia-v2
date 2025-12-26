@@ -1,4 +1,3 @@
-import { Player } from '@lottiefiles/react-lottie-player';
 import { Fade } from "react-awesome-reveal";
 import { usageData } from '../data/UsageData';
 
@@ -7,7 +6,7 @@ export default function UsageExamples() {
     return(
         <section className="relative py-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
+                    <div className="mb-16">
                         <div className="space-y-4 mb-20">
                         <div className='flex justify-center'>
                         <Fade triggerOnce direction="up" duration={800} delay={200}>
@@ -17,7 +16,7 @@ export default function UsageExamples() {
                         <div className='flex justify-center'>
                         <Fade triggerOnce direction="up" duration={800} delay={200}>
                             <h2 className="mb-8 font-bold text-3xl md:text-5xl 
-                            leading-tight tracking-tight max-w-2xl">Comment Mazia peut transformer vos appels
+                            leading-tight tracking-tight max-w-2xl text-center">Comment Mazia peut transformer vos appels
                             </h2>
                         </Fade>
                         </div>
@@ -28,29 +27,29 @@ export default function UsageExamples() {
                         </Fade>
                         </div>
                         </div>
-                            <div className="grid mx-4 md-mx-6 grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-8">
+                        <div className="flex justify-center">
+                            <div className="max-w-5xl">
                                 {usageData.map((item, i) => (
-                                    <Fade key={i} triggerOnce direction="up" duration={800} delay={400}>
-                                        <div className="group flex flex-col space-y-2">
-                                            <div className="flex w-full space-x-4">
-                                                <Player
-                                                autoplay
-                                                loop
-                                                src={item.animation} 
-                                                style={{ height: `${item.size}px`, width: `${item.size}px` }}
-                                                />
-                                            <h3 className="text-xl font-semibold 
-                                            group-hover:text-[#032ca6]
-                                            transition-colors duration-300 tracking-tight">
+                                    <Fade key={i} triggerOnce direction="left" duration={800} delay={400}>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                                            <div className="flex flex-col justify-start items-start space-y-6">
+                                                <h3 className="text-2xl md:text-5xl font-bold max-w-sm leading-shung">
                                                 {item.title}
-                                            </h3>
+                                                </h3>
+                                                <p className="text-base text-left max-w-sm">{item.description}</p>
+                                                <button className="bg-[#032CA6] px-8 text-sm py-2 rounded-xs text-white cursor-pointer">
+                                                    Voir Mazia en action
+                                                </button>
+                                            </div>
+
+                                            <div className="flex justify-center">
+                                                <img src={item.image} className="w-90" />
+                                            </div>
                                         </div>
-                                        <p className="text-left tracking-tight leading-relaxed">{item.description}</p>
-                                    </div>
                                 </Fade>
                             ))}
                             </div>
-                        
+                        </div>
                     </div>
                 </div>
             </section>
