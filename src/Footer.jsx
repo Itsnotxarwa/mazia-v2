@@ -28,7 +28,7 @@ export default function Footer() {
                             </a>
   
                             <a href="#" class="socialContainer containerFour">
-                                <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
+                                <svg class="socialSvg FacebookSvg" viewBox="0 0 320 512" height="1.2em" xmlns="http://www.w3.org/2000/svg"> <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
                             </a>
                         </div>             
                     </div>
@@ -36,47 +36,47 @@ export default function Footer() {
                     <div className="flex flex-1 justify-center gap-16 w-full">
 
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-sm text-black/70 tracking-tight underline">Menu</h3>
+                        <h3 className="font-semibold text-lg text-black/70 tracking-tight underline">Menu</h3>
                         <ul className="space-y-3">
                             <li>
                                 <a 
                                 href=""
-                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Accueil
                                 </a>
                             </li>
                             <li>
                                 <a 
                                 href=""
-                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Fonctionnalitiés
                                 </a>
                             </li>
                             <li>
                                 <a 
                                 href=""
-                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Cas d'usage
                                 </a>
                             </li>
                             <li>
                                 <a 
                                 href=""
-                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Tarifs
                                 </a>
                             </li>
                             <li>
                                 <a 
                                 href=""
-                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Il nous ont fait confiance
                                 </a>
                             </li>
                             <li>
                                 <a 
                                 href=""
-                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Contact
                                 </a>
                             </li>
@@ -84,19 +84,19 @@ export default function Footer() {
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-sm text-black/70 tracking-tight underline">Legal</h3>
+                        <h3 className="font-semibold text-lg text-black/70 tracking-tight underline">Legal</h3>
                         <ul className="space-y-3">
                             <li>
                                 <a 
                                 href=""
-                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Mentions légales
                                 </a>
                             </li>
                             <li>
                                 <a 
                                 href=""
-                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     Publiques de confidentialité
                                 </a>
                             </li>
@@ -104,7 +104,7 @@ export default function Footer() {
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-sm text-black/70 tracking-tight underline">Contact</h3>
+                        <h3 className="font-semibold text-lg text-black/70 tracking-tight underline">Contact</h3>
                         <ul className="space-y-3">
                             <li className="flex gap-3 items-center">
                                 <div className="flex justify-center p-2 border border-gray-500 bg-gray-50 rounded-lg text-black">
@@ -112,7 +112,7 @@ export default function Footer() {
                                 </div>
                                 <a 
                                 href=""
-                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     mail@mazia.fr
                                 </a>
                             </li>
@@ -122,7 +122,7 @@ export default function Footer() {
                                 </div>
                                 <a 
                                 href=""
-                                className="text-black/60 text-sm leading-relaxed tracking-tight transition-colors hover:text-black">
+                                className="text-black/60 text-lg leading-relaxed tracking-tight transition-colors hover:text-black">
                                     +33 *******
                                 </a>
                             </li>
