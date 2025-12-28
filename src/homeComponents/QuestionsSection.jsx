@@ -5,7 +5,7 @@ import bgImage from "../assets/bg.png"
 export default function QuestionsSection() {
 
     return(
-        <section className="relative py-24 px-4 min-h-screen">
+        <section id="questions" className="relative py-24 px-4 min-h-screen">
 
             <img 
             src={bgImage} 

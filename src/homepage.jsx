@@ -12,7 +12,7 @@ import DemoRequest from "./homeComponents/DemoRequest";
 
 export default function Homepage() {
     return(
-        <div className="min-h-screen bg-white text-black overflow-hidden">
+        <div id="accueil" className="min-h-screen bg-white text-black overflow-hidden">
             <Header />
             <HeroSection />
             <BenefitsSection />

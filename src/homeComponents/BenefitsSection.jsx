@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 export default function BenefitsSection() {
 
     return(
-        <section className="relative pt-24 pb-32">
+        <section id="pourquoi-mazia" className="relative pt-24 pb-32">
             <div className="mx-auto px-8 sm:px-6 lg:px-16">
                 <div className="flex items-center justify-center mb-6">
                   <div className="space-y-4">

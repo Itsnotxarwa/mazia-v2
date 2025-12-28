@@ -6,7 +6,7 @@ import features from "../data/Features";
 export default function FeaturesSection() {
 
     return(
-        <section className="relative py-24 min-h-screen overflow-hidden">
+        <section id="fonctionnalities" className="relative py-24 min-h-screen overflow-hidden">
             <img
             src={BgImage}
             className="absolute inset-0 w-full h-full object-cover z-0"

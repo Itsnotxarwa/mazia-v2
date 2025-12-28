@@ -3,7 +3,7 @@ import testimonialsData from "../data/TestimonialsData";
 
 export default function TrustedBy() {
     return(
-        <section className="relative py-24 min-h-screen overflow-hidden">
+        <section id="testimonials" className="relative py-24 min-h-screen overflow-hidden">
             <img
                 src={BgImage}
                 className="absolute inset-0 w-full h-full object-cover z-0"

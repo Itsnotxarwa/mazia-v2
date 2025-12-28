@@ -4,7 +4,7 @@ import { usageData } from '../data/UsageData';
 export default function UsageExamples() {
 
     return(
-        <section className="relative py-24">
+        <section id="cas-usage" className="relative py-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-16">
                         <div className="space-y-4 mb-8 md:mb-20">
@@ -33,8 +33,10 @@ export default function UsageExamples() {
                         <div className="flex justify-center">
                             <div className="max-w-5xl">
                                 {usageData.map((item, i) => (
-                                    <Fade key={i} triggerOnce direction="left" duration={800} delay={400}>
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                                    <Fade triggerOnce direction="left" duration={800} delay={400}>
+                                        <div
+                                        key={i}  
+                                        className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                                             <div className="flex flex-col justify-start items-start space-y-6">
                                                 <h3 className="text-2xl md:text-5xl font-bold max-w-sm leading-shung">
                                                 {item.title}

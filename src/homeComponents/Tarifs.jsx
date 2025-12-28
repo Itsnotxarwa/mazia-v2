@@ -3,7 +3,7 @@ import TarifsData from "../data/TarifsData";
 
 export default function Tarifs() {
     return(
-        <section className="relative py-24">
+        <section id="tarifs" className="relative py-24">
             <div className="mx-auto px-8 sm:px-6 lg:px-16 flex flex-col justify-center items-center">
                 <div className="flex items-center justify-center mb-6">
                     <div className="space-y-4">
