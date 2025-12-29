@@ -38,7 +38,7 @@ export default function AudioVisualizer() {
       
 
   return (
-    <div className="flex items-center justify-center gap-4 p-4 rounded-lg w-full">
+    <div className="flex items-center justify-center gap-0.5 lg:gap-4 md:gap-3 py-4 rounded-lg w-full">
       
       {/* Play / Pause Button */}
       <button
@@ -46,15 +46,15 @@ export default function AudioVisualizer() {
         className={`transition-colors duration-200
           ${ isPlaying ? "text-[#4eec]" : "text-[#032ca6] hover:text-[#4eec]"}`}
       >
-        {isPlaying ? <Pause size={58} /> : <Play size={58} />}
+        {isPlaying ? <Pause className="w-6 h-6 md:w-12 md:h-12 lg:w-14.5 lg:h-14.5" /> : <Play className="w-6 h-6 md:w-12 md:h-12 lg:w-14.5 lg:h-14.5" />}
       </button>
 
       {/* Audio Bars */}
-      <div className="flex items-center gap-3 w-full transition-colors duration-300">
+      <div className="flex items-center gap-1 lg:gap-3 md:gap-2 w-full transition-colors duration-300">
         {bars.map((bar,i) => (
             <div 
             key={i}
-            className="w-1 h-6 rounded-full bg-[#032ca6]"
+            className="w-1 sm:w-2 rounded-full bg-[#032ca6]"
             style={{ 
                 height: `${bar}px`,
                 backgroundColor: i <= activeBars ? "#4eec" : "#032ca6",

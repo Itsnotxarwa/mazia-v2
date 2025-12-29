@@ -4,7 +4,7 @@ import AudioPlayer from "./AudioPlayer";
 
 export default function HeroSection() {
     return(    
-                    <section className="relative py-24">
+                    <section className="relative lg:py-24 py-12">
                         <div className="max-w-6xl mx-auto px-8 sm:px-6 lg:px-16 flex flex-col">
                             <div className="flex flex-col justify-center items-center mb-8">
                                 <div className="flex flex-col items-center justify-center">
@@ -43,9 +43,11 @@ export default function HeroSection() {
                                 </div>
                                 </Fade>
                             </div>
-                            <div className="hidden md:flex justify-center">
+                            <Fade direction="up" triggerOnce duration={800} delay={600}>
+                            <div className="flex justify-center">
                                 <AudioPlayer />
                             </div>
+                            </Fade>
                         </div>
                     </section>
     )

@@ -18,12 +18,12 @@ export default function Header() {
             href: "/#cas-usage",
         },
         {   
-            link: "Tarifs",
-            href: "/#tarifs"
-        },
-        {   
             link: "Il nous ont fait confiance",
             href: "/#testimonials",
+        },
+        {   
+            link: "Tarifs",
+            href: "/#tarifs"
         },
         {   
             link: "Contact",
