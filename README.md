@@ -18,7 +18,7 @@ Tailwind CSS
 
 # Clone the repository
 
-git clone https://github.com/Itsnotxarwa/mazia.git
+git clone https://github.com/Itsnotxarwa/mazia-v2.git
 
 ## Navigate to the project folder
 
