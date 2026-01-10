@@ -32,8 +32,9 @@ export default function Tarifs() {
                     {TarifsData.map((item,i) => (
                         <div
                         key={i}
-                        className="border border-[#032CA6] rounded-xl p-4 flex flex-col">
-                            <div className="flex justify-center">
+                        className="bg-white border border-[#032CA6] rounded-xl p-4 flex 
+                        flex-col shadow-sm hover:shadow-lg transition-shadow duration-300">
+                            <div className="flex justify-center ">
                                 <span className="py-1 px-6 text-[#032ca6] bg-[#032ca6]/10 rounded-full font-bold text-xs tracking-wider">
                                     {item.title}
                                 </span>

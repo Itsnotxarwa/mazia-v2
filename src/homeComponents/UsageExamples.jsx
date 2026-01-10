@@ -32,12 +32,20 @@ export default function UsageExamples() {
                         </div>
                         <div className="flex justify-center">
                             <div className="max-w-5xl">
-                                {usageData.map((item, i) => (
-                                    <Fade triggerOnce direction="left" duration={800} delay={400}>
+                                {usageData.map((item, i) => {
+                                    const isReversed = i % 2 !== 0;
+                                return(
+                                    <Fade 
+                                    key={i} 
+                                    triggerOnce 
+                                    direction={isReversed ? "right" : "left"} 
+                                    duration={800} 
+                                    delay={400}>
                                         <div
-                                        key={i}  
                                         className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                                            <div className="flex flex-col justify-start items-start space-y-6">
+                                            <div className={`flex flex-col items-start justify-center space-y-6 ${
+                                                isReversed ? "md:order-2" : "md:order-1"
+                                            }`}>
                                                 <h3 className="text-2xl md:text-5xl font-bold max-w-sm leading-shung">
                                                 {item.title}
                                                 </h3>
@@ -47,12 +55,14 @@ export default function UsageExamples() {
                                                 </button>
                                             </div>
 
-                                            <div className="flex justify-center">
+                                            <div className={`flex justify-center ${
+                                                isReversed ? "md:order-1" : "md:order-2"
+                                            }`}>
                                                 <img src={item.image} className="w-90" />
                                             </div>
                                         </div>
                                 </Fade>
-                            ))}
+                            )})}
                             </div>
                         </div>
                     </div>
